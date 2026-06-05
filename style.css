@@ -295,6 +295,108 @@ nav ul li a:hover, nav ul li a.active {
     transform: translateY(0);
 }
 
+/* Article & Technical Paper Styles */
+.toc-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 4px;
+}
+
+.toc-box h2 {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.toc-box ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.toc-box a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.toc-box a:hover {
+    color: var(--accent);
+}
+
+.tech-table-wrapper {
+    overflow-x: auto;
+    margin: 30px 0;
+}
+
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background: var(--bg-secondary);
+}
+
+.tech-table th, .tech-table td {
+    border: 1px solid var(--border);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tech-table th {
+    background: rgba(255, 102, 0, 0.1);
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+code {
+    background: #000;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--accent);
+    font-family: monospace;
+}
+
+pre {
+    background: #000;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+    color: #00ffaa;
+}
+
+.cta-block {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #1a1a1a 100%);
+    border: 2px solid var(--accent);
+    padding: 40px;
+    margin: 60px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.cta-block h2 {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .toc-box ul {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Sections */
 .section {
     padding: 80px 0;
