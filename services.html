@@ -8,370 +8,104 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body class="services-matrix-page">
-    <header id="top">
-        <nav class="container">
-            <div class="logo">IGNATEV.<span>AI</span></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" class="active">Servicios</a></li>
-                <li><a href="interactive-web-systems.html">Sistemas Web</a></li>
-                <li><a href="proptech-strategy.html">Estrategia PropTech</a></li>
-                <li><a href="real-estate-services.html">Servicios PropTech</a></li>
-                <li><a href="index.html#contact">Contacto</a></li>
-            </ul>
-            <div class="lang-switcher">
-                <a href="services.html" class="active">ES</a> | 
-                <a href="services-ru.html">RU</a> | 
-                <a href="services-en.html">EN</a>
-            </div>
-        </nav>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">IGNATEV.<span>AI</span></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Servicios</a></li>
+                    <li><a href="proptech-strategy.html">Estrategia</a></li>
+                    <li><a href="real-estate-services.html">PropTech</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <a href="services.html" class="active">ES</a> | <a href="services-ru.html">RU</a> | <a href="services-en.html">EN</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main class="container section">
-        <h1 class="main-title">Matriz de <span>Servicios y Competencias</span></h1>
-        
-        <div class="capabilities-container">
+    <main class="container">
+        <section class="reveal">
+            <h1>Matriz de <span>Servicios y Competencias</span></h1>
+            
             <!-- AI in Industry -->
-            <section class="capability-card card-industry">
-                <div class="capability-header">
-                    <div class="capability-icon">🏭</div>
-                    <div>
-                        <h2>IA Industrial</h2>
-                        <p class="description">Estrategia de digitalización industrial e IA aplicada para la optimización de procesos.</p>
-                        <div class="typical-cases">
-                            <h4>Casos típicos:</h4>
-                            <ul>
-                                <li>Implementación de un LLM local para soporte a técnicos en una planta de celulosa.</li>
-                                <li>Sistema de RAG para consulta inteligente de manuales de soldadura y normas UNIT.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="competency-grid">
-                    <div class="competency-col">
-                        <h3>Strategic</h3>
-                        <ul class="competency-list">
-                            <li>On-premise AI architecture</li>
-                            <li>Digitization strategy for CAD/blueprints</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Target / Product</h3>
-                        <ul class="competency-list">
-                            <li>AI ROI audit</li>
-                            <li>Welding defect computer vision</li>
-                            <li>Predictive maintenance analytics</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Operational</h3>
-                        <ul class="competency-list">
-                            <li>Document AI for parsing schemes</li>
-                            <li>As-is/to-be process mapping</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Supporting</h3>
-                        <ul class="competency-list">
-                            <li>Training engineers in AI tools</li>
-                            <li>Safety and standards (GOST/ISO)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="engagement-models">
-                    <h3>Modelos de Trabajo</h3>
-                    <ul class="competency-list">
-                        <li><strong>Auditoría y Road Map (2–3 semanas):</strong> Análisis de procesos y cálculo de ROI. Entregable: Informe estratégico y hoja de ruta de implementación.</li>
-                        <li><strong>Proyecto Piloto (1–3 meses):</strong> Implementación llave en mano de un flujo de IA (ej. visión artificial). Entregable: Sistema funcional y dashboard de métricas.</li>
-                        <li><strong>Soporte Continuo (Mensual):</strong> Mantenimiento y re-entrenamiento de modelos. Entregable: Reportes de performance y soporte técnico proactivo.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="card" style="margin-bottom: 4rem;">
+                <h2>IA Industrial</h2>
+                <p>Estrategia de digitalización industrial e IA aplicada para la optimización de procesos.</p>
+                <ul class="bullets">
+                    <li>Implementación de un LLM local para soporte a técnicos.</li>
+                    <li>Sistema de RAG para consulta inteligente de manuales y normas.</li>
+                    <li>Auditoría y roadmap de IA (2–3 semanas).</li>
+                    <li>Mantenimiento y re-entrenamiento de modelos.</li>
+                </ul>
+            </div>
 
             <!-- AI in Real Estate / PropTech -->
-            <section class="capability-card card-proptech" id="proptech-services">
-                <div class="capability-header">
-                    <div class="capability-icon">🏠</div>
-                    <div>
-                        <h2>PropTech para inmobiliarias y desarrolladores</h2>
-                        <p class="description">Trabajo con agencias, desarrolladores y fondos que quieren tomar decisiones con datos y automatizar la captación de clientes, sin perder el toque humano.</p>
-                    </div>
+            <div class="card" style="margin-bottom: 4rem;" id="proptech-services">
+                <h2>PropTech para inmobiliarias y desarrolladores</h2>
+                <p>Trabajo con agencias, desarrolladores y fondos que quieren tomar decisiones con datos y automatizar la captación de clientes.</p>
+                <ul class="bullets">
+                    <li>AI Virtual Staging y fotos generadas.</li>
+                    <li>Generación automática de anuncios optimizados.</li>
+                    <li>Asistente de WhatsApp para calificar leads y agendar visitas.</li>
+                    <li>AVM y Radar de Inversión (análisis de mercado).</li>
+                    <li>Diseño de Ecosistema (2–4 semanas).</li>
+                </ul>
+                <div class="btn-group">
+                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn-primary">Empezar por WhatsApp</a>
+                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn-secondary">Hablar por Telegram</a>
                 </div>
-
-                <div class="competency-grid">
-                    <div class="competency-col" style="grid-column: span 2;">
-                        <h3>Servicios clave</h3>
-                        <ul class="bullet-list">
-                            <li><strong>AI Virtual Staging y fotos generadas:</strong> reducción de costos de staging físico hasta miles de USD por cartera.</li>
-                            <li><strong>Generación automática de anuncios:</strong> descripción, puntos fuertes y llamados a la acción listos para publicar.</li>
-                            <li><strong>Asistente de WhatsApp para inmobiliarias:</strong> responde preguntas frecuentes, califica leads y agenda visitas.</li>
-                            <li><strong>AVM y Radar de Inversión:</strong> análisis de mercado para detectar propiedades subvaluadas y justificar precios.</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col" style="grid-column: span 2;">
-                        <h3>Cómo trabajamos</h3>
-                        <ul class="bullet-list">
-                            <li>Diagnóstico corto (1 llamada + análisis de tu flujo actual).</li>
-                            <li>Piloto de 30–60 días sobre una parte de la cartera.</li>
-                            <li>Escalado y soporte continuo si los números cierran.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="engagement-models" style="text-align: center; margin-top: 30px; border-color: var(--accent); border-style: dashed;">
-                    <p style="margin-bottom: 25px; font-size: 1.1rem; color: var(--text-primary);">¿Sos inmobiliaria, desarrollador o inversor? Escribime por WhatsApp o Telegram y armamos un piloto que se pague solo.</p>
-                    <div class="hero-btns" style="justify-content: center; align-items: center;">
-                        <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn">Empezar por WhatsApp</a>
-                        <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none; font-weight: 700; margin-left: 20px;">Hablar por Telegram</a>
-                    </div>
-                </div>
-            </section>
+            </div>
 
             <!-- Engineering & Repairs -->
-            <section class="capability-card card-engineering">
-                <div class="capability-header">
-                    <div class="capability-icon">⚙️</div>
-                    <div>
-                        <h2>Ingeniería y Refacciones</h2>
-                        <p class="description">Ingeniería conceptual, supervisión técnica y diseño de sistemas.</p>
-                        <div class="typical-cases">
-                            <h4>Casos típicos:</h4>
-                            <ul>
-                                <li>Supervisión técnica y rediseño de planta de calderas industriales para cumplimiento de normativa UNIT/LATU.</li>
-                                <li>Diseño de sistemas de iluminación LED de alta eficiencia y bajo mantenimiento para depósitos logísticos.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="competency-grid">
-                    <div class="competency-col">
-                        <h3>Strategic</h3>
-                        <ul class="competency-list">
-                            <li>Conceptual engineering</li>
-                            <li>Zero-waste lighting strategy</li>
-                            <li>Service portfolio management</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Target / Product</h3>
-                        <ul class="competency-list">
-                            <li>Electrical CAD/BIM design</li>
-                            <li>Technical supervision</li>
-                            <li>LED engineering</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Operational</h3>
-                        <ul class="competency-list">
-                            <li>Cost estimation</li>
-                            <li>Material & logistics calculation (SODIMAC)</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Supporting</h3>
-                        <ul class="competency-list">
-                            <li>Subcontractor management</li>
-                            <li>Digital client service (SLA, reports)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="engagement-models">
-                    <h3>Modelos de Trabajo</h3>
-                    <ul class="competency-list">
-                        <li><strong>Documentación Técnica (2–4 semanas):</strong> Planos, modelo BIM y cómputo métrico preciso. Entregable: Carpeta técnica para ejecución y compra de materiales.</li>
-                        <li><strong>Supervisión Técnica (Mensual):</strong> Control de ejecución y calidad en obra. Entregable: Informe de avance semanal con registro fotográfico y control de desvíos.</li>
-                        <li><strong>Auditoría de Sistemas (1 semana):</strong> Evaluación puntual de redes y seguridad. Entregable: Dictamen técnico y recomendaciones de mejora inmediata.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Events with Robot -->
-            <section class="capability-card card-robotics">
-                <div class="capability-header">
-                    <div class="capability-icon">🤖</div>
-                    <div>
-                        <h2>Eventos con Robótica</h2>
-                        <p class="description">Producción de shows tecnológicos y desarrollo de mecatrónica para eventos.</p>
-                        <div class="typical-cases">
-                            <h4>Casos típicos:</h4>
-                            <ul>
-                                <li>Show de apertura para expo industrial con robot sincronizado vía protocolos MQTT/DMX.</li>
-                                <li>Estación interactiva de branding con robot que entrega material personalizado a visitantes.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="competency-grid">
-                    <div class="competency-col">
-                        <h3>Strategic</h3>
-                        <ul class="competency-list">
-                            <li>Show production</li>
-                            <li>B2B adaptation for expos</li>
-                            <li>Mechatronics R&D</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Target / Product</h3>
-                        <ul class="competency-list">
-                            <li>Firmware for ESP32/LilyGO</li>
-                            <li>On-site electronics repair</li>
-                            <li>Low-level sync</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Operational</h3>
-                        <ul class="competency-list">
-                            <li>DMX/OSC/MQTT protocols</li>
-                            <li>RF management</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Supporting</h3>
-                        <ul class="competency-list">
-                            <li>Show timing</li>
-                            <li>Logistics and HSE</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="engagement-models">
-                    <h3>Modelos de Trabajo</h3>
-                    <ul class="competency-list">
-                        <li><strong>Preparación de Show (1–2 meses):</strong> Diseño de guion, programación y sincronización. Entregable: Software de control y guion técnico de operativa.</li>
-                        <li><strong>Soporte en Sitio (Días de evento):</strong> Acompañamiento técnico total durante la actividad. Entregable: Operativa garantizada y resolución técnica inmediata.</li>
-                        <li><strong>Desarrollo Custom (1 mes):</strong> Creación de piezas mecatrónicas o firmware a medida. Entregable: Módulo funcional único para el cliente.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="card" style="margin-bottom: 4rem;">
+                <h2>Ingeniería y Refacciones</h2>
+                <p>Ingeniería conceptual, supervisión técnica y diseño de sistemas.</p>
+                <ul class="bullets">
+                    <li>Rediseño de plantas de calderas (UNIT/LATU).</li>
+                    <li>Diseño de sistemas de iluminación LED de alta eficiencia.</li>
+                    <li>Supervisión técnica y control de calidad en obra.</li>
+                    <li>Auditoría de sistemas y seguridad.</li>
+                </ul>
+            </div>
 
             <!-- Hardware Development -->
-            <section class="capability-card card-hardware">
-                <div class="capability-header">
-                    <div class="capability-icon">📟</div>
-                    <div>
-                        <h2>Desarrollo de Hardware</h2>
-                        <p class="description">Diseño de hardware y sistemas embebidos con Edge IA. Diseño electrónico industrial.</p>
-                        <div class="typical-cases">
-                            <h4>Casos típicos:</h4>
-                            <ul>
-                                <li>Dispositivo de monitoreo remoto para silos de granos basado en ESP32-S3 y comunicación LoRa.</li>
-                                <li>Sensor inteligente con Edge AI para detección de anomalías vibratorias en motores eléctricos.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="competency-grid">
-                    <div class="competency-col">
-                        <h3>Strategic</h3>
-                        <ul class="competency-list">
-                            <li>Edge AI system architecture</li>
-                            <li>PLM lifecycle management</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Target / Product</h3>
-                        <ul class="competency-list">
-                            <li>ESP32-S3 transceiver programming</li>
-                            <li>Local STT/TTS</li>
-                            <li>PCB layout with EMC</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Operational</h3>
-                        <ul class="competency-list">
-                            <li>Industrial enclosure design (3D-print)</li>
-                            <li>Component analysis</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Supporting</h3>
-                        <ul class="competency-list">
-                            <li>Hardware certification</li>
-                            <li>Supply chain management</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="engagement-models">
-                    <h3>Modelos de Trabajo</h3>
-                    <ul class="competency-list">
-                        <li><strong>Prototipo Funcional (1.5–3 meses):</strong> Diseño de esquema, PCB y gabinete. Entregable: Dispositivo operativo y documentación técnica de diseño.</li>
-                        <li><strong>Preparación para Serie (3–4 meses):</strong> Optimización de BOM y búsqueda de manufactura. Entregable: Diseño industrial final y lista de proveedores.</li>
-                        <li><strong>Firmware Edge IA (1–2 meses):</strong> Algoritmos de IA en dispositivo (ESP32). Entregable: Código fuente optimizado y binarios de producción.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="card" style="margin-bottom: 4rem;">
+                <h2>Desarrollo de Hardware</h2>
+                <p>Diseño de hardware y sistemas embebidos con Edge IA.</p>
+                <ul class="bullets">
+                    <li>Monitoreo remoto (ESP32 / LoRa).</li>
+                    <li>Sensores inteligentes con Edge AI para detección de anomalías.</li>
+                    <li>Prototipado funcional (PCB + Gabinete).</li>
+                    <li>Firmware optimizado para producción.</li>
+                </ul>
+            </div>
 
-            <!-- Knowledge Management / Archives -->
-            <section class="capability-card card-knowledge">
-                <div class="capability-header">
-                    <div class="capability-icon">📂</div>
-                    <div>
-                        <h2>Gestión de Conocimiento / Archivos</h2>
-                        <p class="description">Gestión del conocimiento, creación de bases de conocimiento y procesamiento OCR.</p>
-                        <div class="typical-cases">
-                            <h4>Casos típicos:</h4>
-                            <ul>
-                                <li>Digitalización de archivo técnico de 20 años de planos en una base de datos vectorial consultable.</li>
-                                <li>Sistema de extracción automática de datos (OCR) para facturas y remitos industriales complejos.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="competency-grid">
-                    <div class="competency-col">
-                        <h3>Strategic</h3>
-                        <ul class="competency-list">
-                            <li>Knowledge management strategy</li>
-                            <li>B2B service models</li>
-                            <li>Pipeline architecture</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Target / Product</h3>
-                        <ul class="competency-list">
-                            <li>Advanced OCR (layout analysis)</li>
-                            <li>Knowledge graphs</li>
-                            <li>Vector DBs</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Operational</h3>
-                        <ul class="competency-list">
-                            <li>Graphics & text processing</li>
-                            <li>Data quality management</li>
-                        </ul>
-                    </div>
-                    <div class="competency-col">
-                        <h3>Supporting</h3>
-                        <ul class="competency-list">
-                            <li>Information security (NDA)</li>
-                            <li>Field team coordination</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="engagement-models">
-                    <h3>Modelos de Trabajo</h3>
-                    <ul class="competency-list">
-                        <li><strong>Auditoría de Datos (1–2 semanas):</strong> Evaluación de calidad y selección de stack tecnológico. Entregable: Informe de factibilidad y plan de digitalización.</li>
-                        <li><strong>Motor de Búsqueda (1–2 meses):</strong> Sistema LLM + Vector para búsqueda inteligente. Entregable: Interfaz de búsqueda operativa sobre documentos.</li>
-                        <li><strong>Digitalización Llave en Mano:</strong> Procesamiento masivo y extracción de datos. Entregable: Base de datos estructurada y lista para integración.</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <section id="contacto-directo" class="section container reveal">
-            <div class="cta-block">
+            <!-- Knowledge Management -->
+            <div class="card" style="margin-bottom: 4rem;">
+                <h2>Gestión de Conocimiento</h2>
+                <p>Digitalización de archivos, bases de conocimiento y procesamiento OCR.</p>
+                <ul class="bullets">
+                    <li>Digitalización de archivos técnicos masivos.</li>
+                    <li>Sistemas RAG para búsqueda inteligente sobre documentos.</li>
+                    <li>Extracción automática de datos de facturas y planos.</li>
+                </ul>
+            </div>
+
+            <section id="contacto-directo" class="reveal" style="padding-top: 0;">
                 <h2>Contacto directo</h2>
                 <p>Escribime por WhatsApp o Telegram y vemos si te puedo ayudar en 15 minutos.</p>
-                <div style="margin: 20px 0; color: var(--text-secondary);">
+                <div style="margin: 2rem 0;">
                     <p><strong>WhatsApp:</strong> +598 91 973 677</p>
                     <p><strong>Telegram:</strong> https://t.me/ignatev_Aleksandr</p>
                 </div>
-                <div class="hero-btns" style="justify-content: center;">
-                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn">Escribir por WhatsApp</a>
-                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Hablar por Telegram</a>
+                <div class="btn-group">
+                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn-primary">Escribir por WhatsApp</a>
+                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn-secondary">Hablar por Telegram</a>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
 
@@ -387,18 +121,15 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Servicios</a></li>
-                        <li><a href="proptech-strategy.html">Estrategia PropTech</a></li>
-                        <li><a href="real-estate-services.html">Servicios PropTech</a></li>
+                        <li><a href="proptech-strategy.html">Estrategia</a></li>
+                        <li><a href="real-estate-services.html">PropTech</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
                     <h3>Conectar</h3>
-                    <div class="social-icons">
-                        <a href="https://t.me/IngenieroUruguay" target="_blank">Telegram</a>
-                        <a href="https://whatsapp.com/channel/0029VbCcUP18aKvMY70exP2p" target="_blank">WhatsApp</a>
-                        <a href="https://www.facebook.com/share/g/1BAtksPGAX/" target="_blank">Facebook</a>
-                        <a href="https://www.linkedin.com/in/aleksandr-ignatev-7115433bb/" target="_blank">LinkedIn</a>
-                    </div>
+                    <a href="https://t.me/IngenieroUruguay" target="_blank">Telegram</a>
+                    <a href="https://whatsapp.com/channel/0029VbCcUP18aKvMY70exP2p" target="_blank">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/aleksandr-ignatev-7115433bb/" target="_blank">LinkedIn</a>
                 </div>
             </div>
             <p class="copyright">&copy; 2026 IGNATEV.AI. All rights reserved.</p>

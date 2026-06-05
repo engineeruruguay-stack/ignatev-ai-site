@@ -9,229 +9,155 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="top">
-        <nav class="container">
-            <div class="logo">IGNATEV.<span>AI</span></div>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="proptech-strategy.html">Estrategia PropTech</a></li>
-                <li><a href="real-estate-services.html">Servicios PropTech</a></li>
-                <li><a href="#contact">Contacto</a></li>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">IGNATEV.<span>AI</span></div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="proptech-strategy.html">Estrategia</a></li>
+                    <li><a href="real-estate-services.html">PropTech</a></li>
                 </ul>
                 <div class="lang-switcher">
-                <a href="index.html" class="active">ES</a> | 
-                <a href="index-ru.html">RU</a> | 
-                <a href="index-en.html">EN</a>
+                    <a href="index.html" class="active">ES</a> | <a href="index-ru.html">RU</a> | <a href="index-en.html">EN</a>
                 </div>
-                </nav>
-                </header>
+            </nav>
+        </div>
+    </header>
 
-                <main>
-        <section id="hero" class="hero">
-            <div class="container">
-                <h1>Ingeniero de Sistemas de IA y <span>Automatización Industrial</span></h1>
-                <p class="hero-tagline">Implemento IA on-premise y automatización para aumentar el ROI, eliminar tiempos de inactividad y garantizar seguridad total de datos.</p>
-
-                <div class="hero-btns">
-                    <a href="#industrial-ai" class="btn">IA Industrial</a>
-                    <a href="#proptech-ai" class="btn btn-outline">PropTech & Real Estate</a>
-                </div>
+    <main>
+        <section class="hero container reveal">
+            <h1>Ingeniero de Sistemas de IA y <span>Automatización Industrial</span></h1>
+            <p>Implemento IA on-premise y automatización para aumentar el ROI, eliminar tiempos de inactividad y garantizar seguridad total de datos.</p>
+            <div class="btn-group">
+                <a href="#industrial-ai" class="btn-primary">IA Industrial</a>
+                <a href="#proptech-ai" class="btn-secondary">PropTech & Real Estate</a>
             </div>
         </section>
 
-        <section class="section bg-secondary reveal">
+        <section class="bg-alt reveal">
             <div class="container">
-                <div class="hero-target-list" style="text-align: center;">
-                    <h3>A quién ayudo:</h3>
-                    <ul class="bullet-list-hero">
-                        <li><strong>Industria & PYMEs:</strong> Optimización de plantas.</li>
-                        <li><strong>Agencias & Desarrolladores:</strong> Automatización de ventas.</li>
-                        <li><strong>Inversores:</strong> Auditoría técnica y activos.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="directions-strip reveal">
-            <div class="container">
-                <div class="directions-grid">
-                    <div class="direction-item">
-                        <span class="icon">🏭</span>
-                        <h3>IA en la Industria</h3>
-                        <p>Implementación de visión artificial y analítica predictiva para optimizar plantas.</p>
+                <h3>A quién ayudo:</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Industria & PYMEs</h3>
+                        <p>Optimización de plantas y líneas de producción.</p>
                     </div>
-                    <div class="direction-item">
-                        <span class="icon">🏠</span>
-                        <h3>PropTech / Real Estate</h3>
-                        <p>Asistentes de IA en WhatsApp, automatización de leads y valuación predictiva de mercado.</p>
+                    <div class="card">
+                        <h3>Agencias & Desarrolladores</h3>
+                        <p>Automatización de ventas con IA.</p>
                     </div>
-                    <div class="direction-item">
-                        <span class="icon">📟</span>
-                        <h3>Desarrollo de Hardware</h3>
-                        <p>Diseño de electrónica (ESP32) y Edge IA para monitoreo en tiempo real.</p>
-                    </div>
-                    <div class="direction-item">
-                        <span class="icon">📂</span>
-                        <h3>Digitalización de Conocimiento</h3>
-                        <p>Extracción de datos mediante OCR y creación de bases de conocimiento corporativas.</p>
+                    <div class="card">
+                        <h3>Inversores</h3>
+                        <p>Auditoría técnica y búsqueda de activos rentables.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="industrial-ai" class="section reveal">
-            <div class="container">
-                <h2 class="section-title">IA en la Industria</h2>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <h3>Auditoría y roadmap (2–3 semanas)</h3>
-                        <p>Análisis exhaustivo de procesos, cálculo preciso de ROI y diseño de un plan de implementación por etapas.</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>LLM local en planta</h3>
-                        <p>Despliegue de modelos en servidores propios, conexión con manuales y planos técnicos, y capacitación técnica (ITR).</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Monitoreo y analítica predictiva</h3>
-                        <p>Captura de datos de equipos en tiempo real, alertas tempranas de fallas y reducción drástica de paradas no programadas.</p>
-                    </div>
+        <section id="industrial-ai" class="container reveal">
+            <h2 class="section-title">IA en la Industria</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Auditoría y roadmap</h3>
+                    <p>Análisis exhaustivo de procesos, cálculo preciso de ROI y diseño de un plan de implementación por etapas.</p>
+                </div>
+                <div class="card">
+                    <h3>LLM local en planta</h3>
+                    <p>Despliegue de modelos en servidores propios, conexión con manuales y planos técnicos, y capacitación técnica.</p>
+                </div>
+                <div class="card">
+                    <h3>Monitoreo predictivo</h3>
+                    <p>Captura de datos de equipos en tiempo real, alertas tempranas de fallas y reducción drástica de paradas.</p>
                 </div>
             </div>
         </section>
 
-        <section id="proptech-ai" class="section bg-alt reveal">
+        <section id="proptech-ai" class="bg-alt reveal">
             <div class="container">
                 <h2 class="section-title">PropTech para inmobiliarias en Uruguay</h2>
-                <p class="hero-tagline">Te ayudo a vender más rápido y con menos estrés: desde fotos AI hasta asistentes 24/7 en WhatsApp.</p>
+                <p>Te ayudo a vender más rápido y con menos estrés: desde fotos AI hasta asistentes 24/7 en WhatsApp.</p>
                 
-                <div class="info-grid">
-                    <div class="info-card">
+                <div class="grid">
+                    <div class="card">
                         <h3>AI Virtual Staging</h3>
                         <p>Fotos atractivas sin staging físico, listas en horas, no en días.</p>
                     </div>
-                    <div class="info-card">
+                    <div class="card">
                         <h3>Generación de listings</h3>
                         <p>Textos claros y persuasivos adaptados a portales locales como InfoCasas.</p>
                     </div>
-                    <div class="info-card">
+                    <div class="card">
                         <h3>Asistente de WhatsApp</h3>
                         <p>Responde consultas 24/7, califica leads y te pasa solo clientes calientes.</p>
                     </div>
                 </div>
 
                 <div class="product-sub-box">
-                    <div class="info-grid">
+                    <div class="grid">
                         <div>
-                            <strong>Piloto 30 días</strong>
+                            <h3>Piloto 30 días</h3>
                             <p>1 inmueble + bot básico de WhatsApp.</p>
                         </div>
                         <div>
-                            <strong>Implementación completa</strong>
+                            <h3>Implementación completa</h3>
                             <p>Conexión con tu flujo actual, entrenamiento de equipo.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="hero-btns flex-start">
-                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn">Escribir por WhatsApp</a>
-                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="link-secondary">o Telegram</a>
+                <div class="btn-group">
+                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn-primary">Escribir por WhatsApp</a>
+                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn-secondary">o Telegram</a>
                 </div>
             </div>
         </section>
 
-        <section id="why-uruguay" class="section reveal">
-            <div class="container">
-                <h2 class="section-title">Por qué Uruguay ahora</h2>
-                <div class="uruguay-focus-grid">
-                    <div class="focus-text">
-                        <ul class="bullet-list">
-                            <li><strong>Estabilidad Macroeconómica:</strong> Un refugio seguro para el capital en Latinoamérica con reglas claras.</li>
-                            <li><strong>Vivienda Promovida:</strong> Exoneraciones impositivas masivas que impulsan el desarrollo inmobiliario.</li>
-                            <li><strong>Crecimiento Sostenido:</strong> Inversión récord en infraestructura y tecnología.</li>
-                            <li><strong>Hub de Innovación:</strong> Ecosistema ideal para el despliegue de soluciones AI.</li>
-                        </ul>
-                    </div>
-                    <div class="focus-visual">
-                        <div class="simple-chart">
-                            <div class="chart-bar" style="height: 60%;" data-label="Estabilidad"></div>
-                            <div class="chart-bar" style="height: 85%;" data-label="Incentivos"></div>
-                            <div class="chart-bar" style="height: 70%;" data-label="Adopción Tech"></div>
-                        </div>
-                    </div>
-                </div>
+        <section id="why-uruguay" class="container reveal">
+            <h2 class="section-title">Por qué Uruguay ahora</h2>
+            <div class="grid">
+                <ul class="bullets">
+                    <li><strong>Estabilidad Macroeconómica:</strong> Un refugio seguro para el capital con reglas claras.</li>
+                    <li><strong>Vivienda Promovida:</strong> Exoneraciones impositivas masivas que impulsan el desarrollo.</li>
+                    <li><strong>Crecimiento Sostenido:</strong> Inversión récord en infraestructura y tecnología.</li>
+                    <li><strong>Hub de Innovación:</strong> Ecosistema ideal para el despliegue de soluciones AI.</li>
+                </ul>
             </div>
         </section>
 
-        <section id="comparison" class="section bg-alt reveal">
+        <section id="comparison" class="bg-alt reveal">
             <div class="container">
                 <h2 class="section-title">Uruguay vs Rusia: la oportunidad</h2>
-                <div class="comparison-grid">
-                    <div class="comparison-col">
+                <div class="grid">
+                    <div class="card">
                         <h3>Uruguay</h3>
-                        <p>Estabilidad macro, baja saturación tecnológica, dominancia de WhatsApp, alta demanda de modernización en procesos inmobiliarios.</p>
+                        <p>Estabilidad macro, baja saturación tecnológica, dominancia de WhatsApp, alta demanda de modernización.</p>
                     </div>
-                    <div class="comparison-col">
+                    <div class="card">
                         <h3>Rusia</h3>
-                        <p>PropTech hiper-digitalizado, madurez en AVM, pero con restricciones de capital y búsqueda de jurisdicciones seguras.</p>
+                        <p>PropTech hiper-digitalizado, madurez en AVM, pero con restricciones de capital.</p>
                     </div>
                 </div>
-                <div class="comparison-bridge">
-                    <p>Construyo el puente tecnológico integrando la madurez del PropTech ruso con las oportunidades del mercado uruguayo mediante productos de IA a medida.</p>
-                </div>
-                <div class="center-cta">
-                    <a href="proptech-strategy.html" class="btn">Ver Estrategia PropTech completa</a>
+                <p style="margin-top: 2rem; font-style: italic;">Construyo el puente tecnológico integrando la madurez del PropTech ruso con las oportunidades del mercado uruguayo mediante productos de IA a medida.</p>
+                <div class="btn-group">
+                    <a href="proptech-strategy.html" class="btn-secondary">Ver Estrategia PropTech completa</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section reveal">
-            <div class="container">
-                <h2 class="section-title">Sobre mi enfoque</h2>
-                <div class="about-content">
-                    <p>Con una base sólida en <strong>ingeniería industrial</strong> y <strong>sistemas de calderas</strong>, he evolucionado hacia la optimización de procesos mediante <strong>IA</strong>. Mi especialidad es la integración estratégica de tecnología en sectores tradicionales como la industria pesada y el Real Estate.</p>
-                </div>
+        <section id="contacto-directo" class="container reveal">
+            <h2 class="section-title">Contacto directo</h2>
+            <p>Escribime por WhatsApp o Telegram y vemos si te puedo ayudar en 15 minutos.</p>
+            <div style="margin: 2rem 0;">
+                <p><strong>WhatsApp:</strong> +598 91 973 677</p>
+                <p><strong>Telegram:</strong> https://t.me/ignatev_Aleksandr</p>
+            </div>
+            <div class="btn-group">
+                <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn-primary">Escribir por WhatsApp</a>
+                <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn-secondary">Hablar por Telegram</a>
             </div>
         </section>
-
-        <section id="contact" class="section bg-alt reveal">
-            <div class="container">
-                <h2 class="section-title">Contacto</h2>
-                <div class="contact-wrapper">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
-                        <p id="formStatus" class="form-status"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section id="contacto-directo" class="section container reveal">
-            <div class="cta-block">
-                <h2>Contacto directo</h2>
-                <p>Escribime por WhatsApp o Telegram y vemos si te puedo ayudar en 15 minutos.</p>
-                <div class="contact-info">
-                    <p><strong>WhatsApp:</strong> +598 91 973 677</p>
-                    <p><strong>Telegram:</strong> https://t.me/ignatev_Aleksandr</p>
-                </div>
-                <div class="hero-btns">
-                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn">Escribir por WhatsApp</a>
-                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Hablar por Telegram</a>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer>
@@ -246,19 +172,15 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Servicios</a></li>
-                        <li><a href="interactive-web-systems.html">Sistemas Web</a></li>
-                        <li><a href="proptech-strategy.html">Estrategia PropTech</a></li>
-                        <li><a href="real-estate-services.html">Servicios PropTech</a></li>
+                        <li><a href="proptech-strategy.html">Estrategia</a></li>
+                        <li><a href="real-estate-services.html">PropTech</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
                     <h3>Conectar</h3>
-                    <div class="social-icons">
-                        <a href="https://t.me/IngenieroUruguay" target="_blank">Telegram</a>
-                        <a href="https://whatsapp.com/channel/0029VbCcUP18aKvMY70exP2p" target="_blank">WhatsApp</a>
-                        <a href="https://www.facebook.com/share/g/1BAtksPGAX/" target="_blank">Facebook</a>
-                        <a href="https://www.linkedin.com/in/aleksandr-ignatev-7115433bb/" target="_blank">LinkedIn</a>
-                    </div>
+                    <a href="https://t.me/IngenieroUruguay" target="_blank">Telegram</a>
+                    <a href="https://whatsapp.com/channel/0029VbCcUP18aKvMY70exP2p" target="_blank">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/aleksandr-ignatev-7115433bb/" target="_blank">LinkedIn</a>
                 </div>
             </div>
             <p class="copyright">&copy; 2026 IGNATEV.AI. All rights reserved.</p>
