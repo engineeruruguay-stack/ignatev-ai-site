@@ -1,192 +1,794 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IGNATEV.AI | Soluciones de IA Industrial & PropTech</title>
-    <meta name="description" content="Especialista en IA aplicada a la industria y PropTech. Estrategias de mercado Uruguay-Rusia y soluciones B2B para inmobiliarias.">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">IGNATEV.<span>AI</span></div>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="proptech-strategy.html">Estrategia</a></li>
-                    <li><a href="real-estate-services.html">PropTech</a></li>
-                </ul>
-                <div class="lang-switcher">
-                    <a href="index.html" class="active">ES</a> | <a href="index-ru.html">RU</a> | <a href="index-en.html">EN</a>
-                </div>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI-Gnatev Engineering integra inteligencia artificial en procesos reales de pequeñas empresas en Montevideo: atención, operación y documentos."
+    />
+    <meta
+      property="og:title"
+      content="AI-Gnatev Engineering | Integración práctica de IA"
+    />
+    <meta
+      property="og:description"
+      content="IA conectada a procesos reales: responder, ordenar, registrar, preparar y derivar."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_UY" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>AI-Gnatev Engineering | Integración práctica de IA</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido" data-i18n="skip">Ir al contenido</a>
+
+    <header class="site-header" id="inicio">
+      <a class="brand" href="#inicio" aria-label="AI-Gnatev Engineering">
+        <span class="brand-mark" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </span>
+        <span class="brand-copy">
+          <strong>AI-GNATEV</strong>
+          <small>ENGINEERING</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#soluciones" data-i18n="navSolutions">Soluciones</a>
+        <a href="#demo" data-i18n="navDemo">Demostración</a>
+        <a href="#planes" data-i18n="navPlans">Planes</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Idioma">
+          <button class="active" type="button" data-lang="es" aria-pressed="true">
+            ES
+          </button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
         </div>
+        <a class="header-cta" data-whatsapp href="#" target="_blank" rel="noreferrer">
+          <span data-i18n="headerCta">Hablar por WhatsApp</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h13m-5-5 5 5-5 5" />
+          </svg>
+        </a>
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
+        <a href="#soluciones" data-i18n="navSolutions">Soluciones</a>
+        <a href="#demo" data-i18n="navDemo">Demostración</a>
+        <a href="#planes" data-i18n="navPlans">Planes</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
+      </nav>
     </header>
 
-    <main>
-        <section class="hero container reveal">
-            <h1>Ingeniero de Sistemas de IA y <span>Automatización Industrial</span></h1>
-            <p>Implemento IA on-premise y automatización para aumentar el ROI, eliminar tiempos de inactividad y garantizar seguridad total de datos.</p>
-            <div class="btn-group">
-                <a href="#industrial-ai" class="btn-primary">IA Industrial</a>
-                <a href="#proptech-ai" class="btn-secondary">PropTech & Real Estate</a>
+    <main id="contenido">
+      <section class="chapter hero" aria-labelledby="heroTitle">
+        <div class="chapter-index" aria-hidden="true">01 / 10</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="signal-dot"></span>
+              <span data-i18n="heroEyebrow"
+                >Ingeniería de IA · Montevideo, Uruguay</span
+              >
             </div>
-        </section>
-
-        <section class="bg-alt reveal">
-            <div class="container">
-                <h3>A quién ayudo:</h3>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Industria & PYMEs</h3>
-                        <p>Optimización de plantas y líneas de producción.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Agencias & Desarrolladores</h3>
-                        <p>Automatización de ventas con IA.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Inversores</h3>
-                        <p>Auditoría técnica y búsqueda de activos rentables.</p>
-                    </div>
-                </div>
+            <h1 id="heroTitle" data-i18n="heroTitle">
+              IA que trabaja dentro de tu negocio.
+            </h1>
+            <p class="hero-lead" data-i18n="heroLead">
+              Integro inteligencia artificial en atención, operación y
+              documentos para que tu equipo responda antes, ordene mejor y
+              pierda menos oportunidades.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#demo">
+                <span data-i18n="heroDemo">Ver cómo funciona</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h13m-5-5 5 5-5 5" />
+                </svg>
+              </a>
+              <a
+                class="button button-secondary"
+                data-whatsapp
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="heroWhatsapp"
+                >Contar mi proceso</a
+              >
             </div>
-        </section>
-
-        <section id="industrial-ai" class="container reveal">
-            <h2 class="section-title">IA en la Industria</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Auditoría y roadmap</h3>
-                    <p>Análisis exhaustivo de procesos, cálculo preciso de ROI y diseño de un plan de implementación por etapas.</p>
-                </div>
-                <div class="card">
-                    <h3>LLM local en planta</h3>
-                    <p>Despliegue de modelos en servidores propios, conexión con manuales y planos técnicos, y capacitación técnica.</p>
-                </div>
-                <div class="card">
-                    <h3>Monitoreo predictivo</h3>
-                    <p>Captura de datos de equipos en tiempo real, alertas tempranas de fallas y reducción drástica de paradas.</p>
-                </div>
+            <div class="hero-facts" aria-label="Características">
+              <span><b>01</b><i data-i18n="factLocal">Implementación local</i></span>
+              <span><b>02</b><i data-i18n="factChannels">Canales existentes</i></span>
+              <span><b>03</b><i data-i18n="factHuman">Control humano</i></span>
             </div>
-        </section>
+          </div>
 
-        <section id="proptech-ai" class="bg-alt reveal">
-            <div class="container">
-                <h2 class="section-title">PropTech para inmobiliarias en Uruguay</h2>
-                <p>Te ayudo a vender más rápido y con menos estrés: desde fotos AI hasta asistentes 24/7 en WhatsApp.</p>
-                
-                <div class="grid">
-                    <div class="card">
-                        <h3>AI Virtual Staging</h3>
-                        <p>Fotos atractivas sin staging físico, listas en horas, no en días.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Generación de listings</h3>
-                        <p>Textos claros y persuasivos adaptados a portales locales como InfoCasas.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Asistente de WhatsApp</h3>
-                        <p>Responde consultas 24/7, califica leads y te pasa solo clientes calientes.</p>
-                    </div>
-                </div>
-
-                <div class="product-sub-box">
-                    <div class="grid">
-                        <div>
-                            <h3>Piloto 30 días</h3>
-                            <p>1 inmueble + bot básico de WhatsApp.</p>
-                        </div>
-                        <div>
-                            <h3>Implementación completa</h3>
-                            <p>Conexión con tu flujo actual, entrenamiento de equipo.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn-primary">Escribir por WhatsApp</a>
-                    <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn-secondary">o Telegram</a>
-                </div>
+          <div class="hero-system" aria-label="Esquema de integración">
+            <div class="system-topline">
+              <span data-i18n="systemLabel">SISTEMA / EJEMPLO</span>
+              <span class="system-status"
+                ><i></i><span data-i18n="systemActive">Proceso activo</span></span
+              >
             </div>
-        </section>
-
-        <section id="why-uruguay" class="container reveal">
-            <h2 class="section-title">Por qué Uruguay ahora</h2>
-            <div class="grid">
-                <ul class="bullets">
-                    <li><strong>Estabilidad Macroeconómica:</strong> Un refugio seguro para el capital con reglas claras.</li>
-                    <li><strong>Vivienda Promovida:</strong> Exoneraciones impositivas masivas que impulsan el desarrollo.</li>
-                    <li><strong>Crecimiento Sostenido:</strong> Inversión récord en infraestructura y tecnología.</li>
-                    <li><strong>Hub de Innovación:</strong> Ecosistema ideal para el despliegue de soluciones AI.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="comparison" class="bg-alt reveal">
-            <div class="container">
-                <h2 class="section-title">Uruguay vs Rusia: la oportunidad</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Uruguay</h3>
-                        <p>Estabilidad macro, baja saturación tecnológica, dominancia de WhatsApp, alta demanda de modernización.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Rusia</h3>
-                        <p>PropTech hiper-digitalizado, madurez en AVM, pero con restricciones de capital.</p>
-                    </div>
+            <div class="system-stage">
+              <div class="input-message">
+                <span class="input-channel">WA</span>
+                <div>
+                  <small data-i18n="systemInput">ENTRADA</small>
+                  <p data-i18n="systemMessage">
+                    Hola, necesito una cotización. ¿Pueden ayudarme?
+                  </p>
                 </div>
-                <p style="margin-top: 2rem; font-style: italic;">Construyo el puente tecnológico integrando la madurez del PropTech ruso con las oportunidades del mercado uruguayo mediante productos de IA a medida.</p>
-                <div class="btn-group">
-                    <a href="proptech-strategy.html" class="btn-secondary">Ver Estrategia PropTech completa</a>
-                </div>
+              </div>
+              <div class="system-line">
+                <span></span>
+                <b data-i18n="systemProcessing">IA + reglas del negocio</b>
+                <span></span>
+              </div>
+              <div class="system-output-grid">
+                <article>
+                  <small data-i18n="systemClassify">CLASIFICAR</small>
+                  <strong data-i18n="systemLead">Nueva oportunidad</strong>
+                </article>
+                <article>
+                  <small data-i18n="systemCollect">COMPLETAR</small>
+                  <strong data-i18n="systemData">Datos necesarios</strong>
+                </article>
+                <article>
+                  <small data-i18n="systemAct">ACTUAR</small>
+                  <strong data-i18n="systemAction">Tarea para el equipo</strong>
+                </article>
+              </div>
             </div>
-        </section>
+            <footer class="system-footer">
+              <span>AI-G / FLOW 001</span>
+              <span data-i18n="systemDisclaimer">Esquema demostrativo</span>
+            </footer>
+          </div>
+        </div>
+      </section>
 
-        <section id="contacto-directo" class="container reveal">
-            <h2 class="section-title">Contacto directo</h2>
-            <p>Escribime por WhatsApp o Telegram y vemos si te puedo ayudar en 15 minutos.</p>
-            <div style="margin: 2rem 0;">
-                <p><strong>WhatsApp:</strong> +598 91 973 677</p>
-                <p><strong>Telegram:</strong> https://t.me/ignatev_Aleksandr</p>
+      <section class="chapter losses" aria-labelledby="lossesTitle">
+        <div class="chapter-index" aria-hidden="true">02 / 10</div>
+        <div class="section-heading">
+          <div>
+            <span class="section-tag" data-i18n="lossesTag">EL PROBLEMA</span>
+            <h2 id="lossesTitle" data-i18n="lossesTitle">
+              La pérdida no siempre aparece en una factura.
+            </h2>
+          </div>
+          <p data-i18n="lossesIntro">
+            Aparece como una consulta sin respuesta, datos que hay que pedir dos
+            veces o una hora dedicada a reconstruir información dispersa.
+          </p>
+        </div>
+        <div class="loss-grid">
+          <article>
+            <span>01</span>
+            <div class="loss-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40">
+                <path d="M7 9h26v17H17l-8 6v-6H7z" />
+                <path d="M13 15h14M13 20h9" />
+              </svg>
             </div>
-            <div class="btn-group">
-                <a href="https://wa.me/59891973677" target="_blank" rel="noopener noreferrer" class="btn-primary">Escribir por WhatsApp</a>
-                <a href="https://t.me/ignatev_Aleksandr" target="_blank" rel="noopener noreferrer" class="btn-secondary">Hablar por Telegram</a>
+            <h3 data-i18n="lossOneTitle">Respuestas que llegan tarde</h3>
+            <p data-i18n="lossOneText">
+              El cliente pregunta, espera y termina hablando con otra empresa.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <div class="loss-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40">
+                <path d="M8 8h10v10H8zM22 8h10v10H22zM8 22h10v10H8z" />
+                <path d="M27 22v10m-5-5h10" />
+              </svg>
             </div>
-        </section>
+            <h3 data-i18n="lossTwoTitle">Información desordenada</h3>
+            <p data-i18n="lossTwoText">
+              Mensajes, fotos y decisiones quedan separados entre chats y
+              personas.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <div class="loss-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="13" />
+                <path d="M20 12v9l6 3" />
+              </svg>
+            </div>
+            <h3 data-i18n="lossThreeTitle">Trabajo manual repetido</h3>
+            <p data-i18n="lossThreeText">
+              El equipo copia datos, prepara documentos y responde lo mismo una
+              y otra vez.
+            </p>
+          </article>
+        </div>
+        <div class="loss-statement">
+          <span data-i18n="lossStatementLabel">PRINCIPIO DE TRABAJO</span>
+          <p data-i18n="lossStatement">
+            No automatizo por moda. Primero localizo una pérdida concreta;
+            después diseño un flujo que pueda medirse.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter flow" aria-labelledby="flowTitle">
+        <div class="chapter-index" aria-hidden="true">03 / 10</div>
+        <div class="section-heading">
+          <div>
+            <span class="section-tag" data-i18n="flowTag">ARQUITECTURA SIMPLE</span>
+            <h2 id="flowTitle" data-i18n="flowTitle">
+              El mensaje no termina en una respuesta. Termina en una acción.
+            </h2>
+          </div>
+          <p data-i18n="flowIntro">
+            La IA se conecta al proceso existente, usa información aprobada y
+            sabe cuándo detenerse para entregar el caso a una persona.
+          </p>
+        </div>
+        <div class="flow-diagram" role="img" aria-label="Flujo de automatización">
+          <article>
+            <span class="flow-number">01</span>
+            <div class="flow-node">
+              <small data-i18n="flowInputLabel">ENTRADA</small>
+              <strong data-i18n="flowInputTitle">Mensaje o documento</strong>
+              <p data-i18n="flowInputText">WhatsApp, email, formulario o archivo.</p>
+            </div>
+          </article>
+          <i class="connector" aria-hidden="true"></i>
+          <article>
+            <span class="flow-number">02</span>
+            <div class="flow-node node-blue">
+              <small data-i18n="flowAiLabel">PROCESAMIENTO</small>
+              <strong data-i18n="flowAiTitle">IA + conocimiento</strong>
+              <p data-i18n="flowAiText">Clasifica, extrae, redacta y verifica reglas.</p>
+            </div>
+          </article>
+          <i class="connector" aria-hidden="true"></i>
+          <article>
+            <span class="flow-number">03</span>
+            <div class="flow-node">
+              <small data-i18n="flowActionLabel">RESULTADO</small>
+              <strong data-i18n="flowActionTitle">Acción registrada</strong>
+              <p data-i18n="flowActionText">Respuesta, tarea, ficha, informe o alerta.</p>
+            </div>
+          </article>
+          <i class="connector split" aria-hidden="true"></i>
+          <article>
+            <span class="flow-number">04</span>
+            <div class="flow-node node-human">
+              <small data-i18n="flowHumanLabel">EXCEPCIÓN</small>
+              <strong data-i18n="flowHumanTitle">Decisión humana</strong>
+              <p data-i18n="flowHumanText">Precio, riesgo, conflicto o baja confianza.</p>
+            </div>
+          </article>
+        </div>
+        <div class="flow-caption">
+          <span>INPUT</span><b></b><span>LOGIC</span><b></b><span>OUTPUT</span
+          ><b></b><span>CONTROL</span>
+        </div>
+      </section>
+
+      <section class="chapter solutions" id="soluciones" aria-labelledby="solutionsTitle">
+        <div class="chapter-index" aria-hidden="true">04 / 10</div>
+        <div class="section-heading">
+          <div>
+            <span class="section-tag" data-i18n="solutionsTag">SOLUCIONES</span>
+            <h2 id="solutionsTitle" data-i18n="solutionsTitle">
+              Tres lugares donde la IA puede empezar a producir valor.
+            </h2>
+          </div>
+          <p data-i18n="solutionsIntro">
+            El piloto empieza por un proceso estrecho. Si funciona, se amplía;
+            si no, no se construye una plataforma innecesaria.
+          </p>
+        </div>
+        <div class="solution-grid">
+          <article class="solution-card">
+            <header>
+              <span>01</span>
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M8 10h32v22H22L11 40v-8H8z" />
+                <path d="M15 18h18M15 24h12" />
+              </svg>
+            </header>
+            <h3 data-i18n="solutionOneTitle">Atención y oportunidades</h3>
+            <p data-i18n="solutionOneText">
+              Respuestas iniciales, preguntas de calificación, registro de datos
+              y entrega de oportunidades al equipo.
+            </p>
+            <ul>
+              <li data-i18n="solutionOneA">WhatsApp e Instagram</li>
+              <li data-i18n="solutionOneB">Consultas frecuentes</li>
+              <li data-i18n="solutionOneC">Clasificación de leads</li>
+            </ul>
+          </article>
+          <article class="solution-card featured">
+            <header>
+              <span>02</span>
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M9 9h12v12H9zM27 9h12v12H27zM9 27h12v12H9z" />
+                <path d="M33 27v12m-6-6h12" />
+              </svg>
+            </header>
+            <h3 data-i18n="solutionTwoTitle">Operación interna</h3>
+            <p data-i18n="solutionTwoText">
+              Solicitudes convertidas en tareas completas, responsables,
+              prioridades y seguimiento visible.
+            </p>
+            <ul>
+              <li data-i18n="solutionTwoA">Recepción de solicitudes</li>
+              <li data-i18n="solutionTwoB">Asignación y alertas</li>
+              <li data-i18n="solutionTwoC">Registro en Sheets o CRM</li>
+            </ul>
+          </article>
+          <article class="solution-card">
+            <header>
+              <span>03</span>
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M13 7h17l7 7v27H13z" />
+                <path d="M30 7v8h7M19 22h12M19 28h12M19 34h8" />
+              </svg>
+            </header>
+            <h3 data-i18n="solutionThreeTitle">Documentos e informes</h3>
+            <p data-i18n="solutionThreeText">
+              Fotos, notas y datos transformados en borradores consistentes para
+              revisar y enviar.
+            </p>
+            <ul>
+              <li data-i18n="solutionThreeA">Presupuestos</li>
+              <li data-i18n="solutionThreeB">Informes técnicos</li>
+              <li data-i18n="solutionThreeC">Resúmenes y propuestas</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="chapter demo" id="demo" aria-labelledby="demoTitle">
+        <div class="chapter-index" aria-hidden="true">05 / 10</div>
+        <div class="section-heading demo-heading">
+          <div>
+            <span class="section-tag" data-i18n="demoTag"
+              >DEMOSTRACIÓN INTERACTIVA</span
+            >
+            <h2 id="demoTitle" data-i18n="demoTitle">
+              Un mismo principio. Tres procesos distintos.
+            </h2>
+          </div>
+          <div class="demo-notice">
+            <span>DEMO</span>
+            <p data-i18n="demoNotice">
+              Datos ficticios. No es una integración productiva.
+            </p>
+          </div>
+        </div>
+
+        <div class="demo-tabs" role="tablist" aria-label="Escenarios">
+          <button
+            class="active"
+            id="tabHostel"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="demoPanel"
+            data-scenario="hostel"
+          >
+            <span>01</span><b data-i18n="demoHostel">Alojamiento</b>
+          </button>
+          <button
+            id="tabRealestate"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="demoPanel"
+            data-scenario="realestate"
+          >
+            <span>02</span><b data-i18n="demoRealestate">Inmobiliaria</b>
+          </button>
+          <button
+            id="tabService"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="demoPanel"
+            data-scenario="service"
+          >
+            <span>03</span><b data-i18n="demoService">Servicio técnico</b>
+          </button>
+        </div>
+
+        <div class="demo-workspace" id="demoPanel" role="tabpanel" tabindex="0">
+          <div class="demo-message-column">
+            <div class="demo-column-head">
+              <span data-i18n="demoIncoming">MENSAJE ENTRANTE</span>
+              <i>WHATSAPP / 19:42</i>
+            </div>
+            <div class="demo-message">
+              <div class="demo-avatar" id="demoAvatar">SM</div>
+              <div>
+                <strong id="demoPerson">Sofía M.</strong>
+                <p id="demoMessage">
+                  Hola, mi vuelo llega a la 01:30. ¿Puedo hacer late check-in?
+                </p>
+              </div>
+            </div>
+            <div class="demo-processing">
+              <span class="processing-mark">AI</span>
+              <div>
+                <small data-i18n="demoProcessing">PROCESAMIENTO</small>
+                <strong id="demoProcessingText"
+                  >Consulta de llegada fuera de horario</strong
+                >
+              </div>
+              <span class="processing-state" data-i18n="demoAnalyzed"
+                >Analizado</span
+              >
+            </div>
+          </div>
+
+          <div class="demo-result-column">
+            <div class="demo-column-head">
+              <span data-i18n="demoResult">RESULTADO OPERATIVO</span>
+              <i id="demoProductLabel">ASISTENTE / ALOJAMIENTO</i>
+            </div>
+            <div class="result-card">
+              <header>
+                <div>
+                  <small id="demoTypeLabel">TIPO</small>
+                  <h3 id="demoResultTitle">Llegada nocturna</h3>
+                </div>
+                <span id="demoStatus">REGISTRADA</span>
+              </header>
+              <dl id="demoFields"></dl>
+              <div class="result-action">
+                <small data-i18n="demoNextAction">SIGUIENTE ACCIÓN</small>
+                <p id="demoAction">
+                  Verificar reserva y enviar instrucciones de acceso aprobadas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-footnote">
+          <p id="demoFootnote">
+            El asistente responde con información aprobada y registra la llegada
+            para recepción.
+          </p>
+          <span>AI-G / LIVE LOGIC</span>
+        </div>
+      </section>
+
+      <section class="chapter implementation" aria-labelledby="implementationTitle">
+        <div class="chapter-index" aria-hidden="true">06 / 10</div>
+        <div class="section-heading">
+          <div>
+            <span class="section-tag" data-i18n="implementationTag"
+              >IMPLEMENTACIÓN</span
+            >
+            <h2 id="implementationTitle" data-i18n="implementationTitle">
+              Primero entender. Después conectar.
+            </h2>
+          </div>
+          <p data-i18n="implementationIntro">
+            El trabajo se divide en etapas visibles. El negocio sabe qué se
+            configura, qué se prueba y cómo se decide si continuar.
+          </p>
+        </div>
+        <ol class="implementation-steps">
+          <li>
+            <span>01</span>
+            <div>
+              <small data-i18n="stepOneLabel">DIAGNÓSTICO</small>
+              <h3 data-i18n="stepOneTitle">Elegir una pérdida concreta</h3>
+              <p data-i18n="stepOneText">
+                Revisamos el proceso actual, el volumen, las excepciones y el
+                resultado que vale la pena medir.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <small data-i18n="stepTwoLabel">DISEÑO</small>
+              <h3 data-i18n="stepTwoTitle">Definir reglas y conocimiento</h3>
+              <p data-i18n="stepTwoText">
+                Aprobamos respuestas, datos necesarios, límites y situaciones
+                que siempre requieren una persona.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <small data-i18n="stepThreeLabel">PILOTO</small>
+              <h3 data-i18n="stepThreeTitle">Conectar un flujo controlado</h3>
+              <p data-i18n="stepThreeText">
+                Probamos con casos reales o controlados, corregimos errores y
+                registramos resultados.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <small data-i18n="stepFourLabel">DECISIÓN</small>
+              <h3 data-i18n="stepFourTitle">Medir antes de ampliar</h3>
+              <p data-i18n="stepFourText">
+                Comparamos tiempo, velocidad, completitud y carga manual. La
+                siguiente inversión depende de esos datos.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <div class="measurement-strip">
+          <span data-i18n="measureTitle">QUÉ MEDIMOS</span>
+          <b data-i18n="measureOne">Tiempo de respuesta</b>
+          <b data-i18n="measureTwo">Datos completos</b>
+          <b data-i18n="measureThree">Intervención manual</b>
+          <b data-i18n="measureFour">Casos derivados</b>
+        </div>
+      </section>
+
+      <section class="chapter plans" id="planes" aria-labelledby="plansTitle">
+        <div class="chapter-index" aria-hidden="true">07 / 10</div>
+        <div class="section-heading">
+          <div>
+            <span class="section-tag" data-i18n="plansTag">FORMATOS DE TRABAJO</span>
+            <h2 id="plansTitle" data-i18n="plansTitle">
+              Empezar pequeño no significa empezar a ciegas.
+            </h2>
+          </div>
+          <p data-i18n="plansIntro">
+            Los precios son referencias iniciales. El alcance final se confirma
+            después de entender datos, canales y excepciones.
+          </p>
+        </div>
+        <div class="plans-grid">
+          <article class="plan-card">
+            <header>
+              <span>01</span>
+              <small data-i18n="planOneName">DIAGNÓSTICO IA</small>
+            </header>
+            <div class="plan-price">
+              <span data-i18n="from">desde</span>
+              <strong>USD 80</strong>
+            </div>
+            <p data-i18n="planOneText">
+              Para encontrar el primer proceso viable y definir una hoja de ruta
+              sin comprar herramientas todavía.
+            </p>
+            <ul>
+              <li data-i18n="planOneA">Revisión de un proceso</li>
+              <li data-i18n="planOneB">Mapa de automatización</li>
+              <li data-i18n="planOneC">Riesgos y próximos pasos</li>
+            </ul>
+            <a data-whatsapp href="#" target="_blank" rel="noreferrer"
+              ><span data-i18n="planCta">Consultar alcance</span
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h13m-5-5 5 5-5 5" /></svg
+            ></a>
+          </article>
+          <article class="plan-card plan-featured">
+            <header>
+              <span>02</span>
+              <small data-i18n="planTwoName">INTEGRACIÓN BÁSICA</small>
+            </header>
+            <div class="plan-price">
+              <span data-i18n="from">desde</span>
+              <strong>USD 250</strong>
+            </div>
+            <p data-i18n="planTwoText">
+              Un asistente o flujo conectado a un canal, con reglas, registro y
+              prueba controlada.
+            </p>
+            <ul>
+              <li data-i18n="planTwoA">Base de conocimiento</li>
+              <li data-i18n="planTwoB">Un canal y un proceso</li>
+              <li data-i18n="planTwoC">Pruebas y ajustes iniciales</li>
+            </ul>
+            <a data-whatsapp href="#" target="_blank" rel="noreferrer"
+              ><span data-i18n="planCta">Consultar alcance</span
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h13m-5-5 5 5-5 5" /></svg
+            ></a>
+          </article>
+          <article class="plan-card">
+            <header>
+              <span>03</span>
+              <small data-i18n="planThreeName">IA + OPERACIÓN</small>
+            </header>
+            <div class="plan-price">
+              <span data-i18n="from">desde</span>
+              <strong>USD 500</strong>
+            </div>
+            <p data-i18n="planThreeText">
+              Varios pasos, integraciones internas, reportes y acompañamiento
+              para un proceso operativo.
+            </p>
+            <ul>
+              <li data-i18n="planThreeA">Flujo de varias etapas</li>
+              <li data-i18n="planThreeB">Sheets, CRM o documentos</li>
+              <li data-i18n="planThreeC">Seguimiento y soporte</li>
+            </ul>
+            <a data-whatsapp href="#" target="_blank" rel="noreferrer"
+              ><span data-i18n="planCta">Consultar alcance</span
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h13m-5-5 5 5-5 5" /></svg
+            ></a>
+          </article>
+        </div>
+        <p class="plans-note" data-i18n="plansNote">
+          Las cuentas, números y servicios externos se registran a nombre del
+          cliente y se contratan únicamente después de aprobar el alcance.
+        </p>
+      </section>
+
+      <section class="chapter control" aria-labelledby="controlTitle">
+        <div class="chapter-index" aria-hidden="true">08 / 10</div>
+        <div class="control-grid">
+          <div class="control-copy">
+            <span class="section-tag" data-i18n="controlTag">CONTROL Y LÍMITES</span>
+            <h2 id="controlTitle" data-i18n="controlTitle">
+              Una buena automatización también sabe cuándo no actuar.
+            </h2>
+            <p data-i18n="controlIntro">
+              La IA no debe inventar una política comercial, confirmar un riesgo
+              ni tomar decisiones sensibles sin autorización.
+            </p>
+          </div>
+          <div class="control-board">
+            <div class="control-row">
+              <span>01</span>
+              <b data-i18n="controlOne">Precio, descuento o compromiso comercial</b>
+              <em data-i18n="humanReview">Revisión humana</em>
+            </div>
+            <div class="control-row">
+              <span>02</span>
+              <b data-i18n="controlTwo">Riesgo, emergencia o dato sensible</b>
+              <em data-i18n="humanReview">Revisión humana</em>
+            </div>
+            <div class="control-row">
+              <span>03</span>
+              <b data-i18n="controlThree">Información ausente o baja confianza</b>
+              <em data-i18n="humanReview">Revisión humana</em>
+            </div>
+            <div class="control-row">
+              <span>04</span>
+              <b data-i18n="controlFour">Respuesta respaldada por reglas aprobadas</b>
+              <em class="auto" data-i18n="automaticAction">Acción automática</em>
+            </div>
+          </div>
+        </div>
+        <div class="control-principle">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 3 5 8v7c0 7 4 12 11 14 7-2 11-7 11-14V8z" />
+            <path d="m11 16 3 3 7-7" />
+          </svg>
+          <p data-i18n="controlPrinciple">
+            El objetivo no es eliminar a la persona. Es entregarle contexto,
+            criterios y tiempo para decidir mejor.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter about" aria-labelledby="aboutTitle">
+        <div class="chapter-index" aria-hidden="true">09 / 10</div>
+        <div class="about-grid">
+          <div class="about-identity" aria-hidden="true">
+            <span class="about-monogram">AI</span>
+            <div>
+              <span>MONTEVIDEO</span>
+              <b>34.9011° S</b>
+              <b>56.1645° W</b>
+            </div>
+          </div>
+          <div class="about-copy">
+            <span class="section-tag" data-i18n="aboutTag">QUIÉN IMPLEMENTA</span>
+            <h2 id="aboutTitle" data-i18n="aboutTitle">
+              Ingeniería primero. Herramientas después.
+            </h2>
+            <p class="about-lead" data-i18n="aboutLead">
+              Soy Aleksandr, ingeniero en Montevideo. Combino análisis de
+              procesos, experiencia técnica y herramientas de IA para construir
+              soluciones simples que un negocio pueda entender y controlar.
+            </p>
+            <div class="about-values">
+              <article>
+                <span>01</span>
+                <div>
+                  <strong data-i18n="aboutOneTitle">Local y directo</strong>
+                  <p data-i18n="aboutOneText">
+                    Trabajo con la operación real, en español y con contexto de
+                    Uruguay.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <strong data-i18n="aboutTwoTitle">Sin caja negra</strong>
+                  <p data-i18n="aboutTwoText">
+                    El flujo, los límites y los costos externos quedan visibles.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <strong data-i18n="aboutThreeTitle">Medición antes de escala</strong>
+                  <p data-i18n="aboutThreeText">
+                    Un piloto debe demostrar utilidad antes de crecer.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter contact" id="contacto" aria-labelledby="contactTitle">
+        <div class="chapter-index light" aria-hidden="true">10 / 10</div>
+        <div class="contact-grid">
+          <div>
+            <span class="section-tag light" data-i18n="contactTag"
+              >PRIMERA CONVERSACIÓN</span
+            >
+            <h2 id="contactTitle" data-i18n="contactTitle">
+              Mostrame una tarea repetitiva. Busquemos si vale la pena
+              automatizarla.
+            </h2>
+          </div>
+          <div class="contact-action">
+            <p data-i18n="contactText">
+              Una conversación breve alcanza para entender el proceso, los datos
+              disponibles y el primer resultado posible.
+            </p>
+            <a
+              class="contact-button"
+              data-whatsapp
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>
+                <small data-i18n="contactButtonLabel">ESCRIBIR POR WHATSAPP</small>
+                <strong>+598 91 973 677</strong>
+              </span>
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M7 16h18m-7-7 7 7-7 7" />
+              </svg>
+            </a>
+            <span class="contact-meta">
+              <i data-i18n="contactMeta">Montevideo · Atención ES / RU</i>
+              <b>engineer.uruguay@gmail.com</b>
+            </span>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <span>© <b id="currentYear"></b> AI-Gnatev Engineering</span>
+          <span data-i18n="footerNote">Integración práctica de IA para negocios</span>
+          <a href="#inicio" data-i18n="backTop">Volver arriba ↑</a>
+        </footer>
+      </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="logo">IGNATEV.<span>AI</span></div>
-                    <p>Soluciones de IA Industrial & PropTech</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Explorar</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Servicios</a></li>
-                        <li><a href="proptech-strategy.html">Estrategia</a></li>
-                        <li><a href="real-estate-services.html">PropTech</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Conectar</h3>
-                    <a href="https://t.me/IngenieroUruguay" target="_blank">Telegram</a>
-                    <a href="https://whatsapp.com/channel/0029VbCcUP18aKvMY70exP2p" target="_blank">WhatsApp</a>
-                    <a href="https://www.linkedin.com/in/aleksandr-ignatev-7115433bb/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2026 IGNATEV.AI. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
